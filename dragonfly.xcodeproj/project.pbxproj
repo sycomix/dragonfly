@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12CF2E49A7697F1FD214DAAC /* Pods_dragonflyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E3B5E66AB3B7A11C5E6C6C /* Pods_dragonflyTests.framework */; };
+		89C27D62AE46873909703D69 /* Pods_dragonfly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EDCAA8009199A1D20A36781 /* Pods_dragonfly.framework */; };
 		F903E0BA1FEB60FA0018EEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903E0B91FEB60FA0018EEC1 /* AppDelegate.swift */; };
 		F903E0BC1FEB60FA0018EEC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F903E0BB1FEB60FA0018EEC1 /* ViewController.swift */; };
 		F903E0BF1FEB60FA0018EEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F903E0BD1FEB60FA0018EEC1 /* Main.storyboard */; };
@@ -26,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EDCAA8009199A1D20A36781 /* Pods_dragonfly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dragonfly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180F112256DDC60075B6AFED /* Pods-dragonflyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dragonflyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dragonflyTests/Pods-dragonflyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32E3B5E66AB3B7A11C5E6C6C /* Pods_dragonflyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dragonflyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5E8B1B04142AB979C4159B /* Pods-dragonflyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dragonflyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-dragonflyTests/Pods-dragonflyTests.release.xcconfig"; sourceTree = "<group>"; };
+		C24B37C223881CA6E8039030 /* Pods-dragonfly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dragonfly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dragonfly/Pods-dragonfly.debug.xcconfig"; sourceTree = "<group>"; };
+		CDC1B4CC3E7D4BBD38DCD49F /* Pods-dragonfly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dragonfly.release.xcconfig"; path = "Pods/Target Support Files/Pods-dragonfly/Pods-dragonfly.release.xcconfig"; sourceTree = "<group>"; };
 		F903E0B61FEB60FA0018EEC1 /* dragonfly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dragonfly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F903E0B91FEB60FA0018EEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F903E0BB1FEB60FA0018EEC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C27D62AE46873909703D69 /* Pods_dragonfly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12CF2E49A7697F1FD214DAAC /* Pods_dragonflyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7EBA8C30AC5796A31BD84A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EDCAA8009199A1D20A36781 /* Pods_dragonfly.framework */,
+				32E3B5E66AB3B7A11C5E6C6C /* Pods_dragonflyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		584B598A953B7A5A53F4E6D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C24B37C223881CA6E8039030 /* Pods-dragonfly.debug.xcconfig */,
+				CDC1B4CC3E7D4BBD38DCD49F /* Pods-dragonfly.release.xcconfig */,
+				180F112256DDC60075B6AFED /* Pods-dragonflyTests.debug.xcconfig */,
+				AA5E8B1B04142AB979C4159B /* Pods-dragonflyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F903E0AD1FEB60FA0018EEC1 = {
 			isa = PBXGroup;
 			children = (
 				F903E0B81FEB60FA0018EEC1 /* dragonfly */,
 				F903E0CD1FEB60FA0018EEC1 /* dragonflyTests */,
 				F903E0B71FEB60FA0018EEC1 /* Products */,
+				584B598A953B7A5A53F4E6D0 /* Pods */,
+				3C7EBA8C30AC5796A31BD84A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F903E0D31FEB60FA0018EEC1 /* Build configuration list for PBXNativeTarget "dragonfly" */;
 			buildPhases = (
+				418B4558293D66D3CF8E0053 /* [CP] Check Pods Manifest.lock */,
 				F903E0B21FEB60FA0018EEC1 /* Sources */,
 				F903E0B31FEB60FA0018EEC1 /* Frameworks */,
 				F903E0B41FEB60FA0018EEC1 /* Resources */,
+				5E289BDDE4F946F1A8D8441F /* [CP] Embed Pods Frameworks */,
+				D856D45FD9B6EF0283D29A45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F903E0D61FEB60FA0018EEC1 /* Build configuration list for PBXNativeTarget "dragonflyTests" */;
 			buildPhases = (
+				FCAEC9229DF87C7329083ED9 /* [CP] Check Pods Manifest.lock */,
 				F903E0C61FEB60FA0018EEC1 /* Sources */,
 				F903E0C71FEB60FA0018EEC1 /* Frameworks */,
 				F903E0C81FEB60FA0018EEC1 /* Resources */,
+				95B8FDC0E205D62437F58F21 /* [CP] Embed Pods Frameworks */,
+				27556C9B0951520619F1B746 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27556C9B0951520619F1B746 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dragonflyTests/Pods-dragonflyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		418B4558293D66D3CF8E0053 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E289BDDE4F946F1A8D8441F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dragonfly/Pods-dragonfly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B8FDC0E205D62437F58F21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dragonflyTests/Pods-dragonflyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D856D45FD9B6EF0283D29A45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dragonfly/Pods-dragonfly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAEC9229DF87C7329083ED9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F903E0B21FEB60FA0018EEC1 /* Sources */ = {
@@ -351,6 +482,7 @@
 		};
 		F903E0D41FEB60FA0018EEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24B37C223881CA6E8039030 /* Pods-dragonfly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +498,7 @@
 		};
 		F903E0D51FEB60FA0018EEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC1B4CC3E7D4BBD38DCD49F /* Pods-dragonfly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +514,7 @@
 		};
 		F903E0D71FEB60FA0018EEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180F112256DDC60075B6AFED /* Pods-dragonflyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +532,7 @@
 		};
 		F903E0D81FEB60FA0018EEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5E8B1B04142AB979C4159B /* Pods-dragonflyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
